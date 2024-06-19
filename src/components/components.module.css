@@ -1,0 +1,107 @@
+/*Navbar*/
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px;
+    background-color: var(--lightBrown);
+}
+
+.logo {
+    width: 30px;
+}
+
+.headerContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerButtons .headerButtons{
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO SECTION */
+.hero-section {
+    height: 280px;
+    background: url("../public/biblioteca.jpg");
+    background-size: fill;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-title {
+    width: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 0 20px;
+}
+
+.hero-title span:first-child {
+    font-size: 20px;
+}
+
+.hero-title span:last-child {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.hero-span {
+    color: white;
+    font-weight: 700;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    min-height: 250px;
+    background-color: var(--lightBrown);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerCopyright {
+    width: 100%;
+    border-top: 1px solid var(--lightColor);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footerUl {
+    width: 170px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.footerLi {
+    padding: 5px 0;
+}
+
+.footerMainItem {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.footerLink {
+    color: white;
+    text-decoration: none;
+}
