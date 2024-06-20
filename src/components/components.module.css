@@ -28,6 +28,9 @@
     font-size: 15px;
 }
 
+.navLinks a img{
+    width: 20px;
+}
 /* HERO SECTION */
 .hero-section {
     width: 100%;

@@ -7,6 +7,7 @@ function OflineLinks() {
       <Link to="/verify" >Verificar Usuario</Link>
       <Link to="/recent" >Lo mas reciente</Link>
       <Link to="/popular" >Lo mas popular</Link>
+      <Link to="/search" ><img src="/search.svg" alt="search" /></Link>
     </div>
   )
 }

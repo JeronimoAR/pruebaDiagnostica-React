@@ -8,7 +8,8 @@ function OnlineLinks() {
       <Link to="/manageBooks" >ManageBooks</Link>
       <Link to="/recent" >Lo mas reciente</Link>
       <Link to="/popular" >Lo mas popular</Link>
-      <Link to="/logOut" >Log out</Link>
+      <Link to="/search" ><img src="/search.svg" alt="search" /></Link>
+      <Link to="/logOut" ><img src="/logOut.svg" alt="search" /></Link>
     </div>
   )
 }
