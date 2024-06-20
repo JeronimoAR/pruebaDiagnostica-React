@@ -8,6 +8,12 @@ import Verify from './views/Verify.jsx'
 function App() {
   useEffect(() => {
     localStorage.setItem("books", JSON.stringify(books))
+    const online = localStorage.getItem("online")
+
+    if (online == null) {
+      localStorage.setItem("online", false)
+    }
+
   },)
 
   const router = createBrowserRouter([
