@@ -22,6 +22,10 @@ function Search() {
         const found = books.filter((each) => each.titulo.toLowerCase()
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
+            .includes(text.toLowerCase()) ||
+            each.autor.toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
             .includes(text.toLowerCase()));
         setFilteredBooks(found)
 
