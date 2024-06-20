@@ -14,6 +14,13 @@ function home() {
         if (localeBooks) {
             setBooks(JSON.parse(localeBooks))
         }
+
+        const online = localStorage.getItem("online")
+
+        if(online == null){
+            localStorage.setItem("online", false)
+        }
+        
     }, [])
 
     return (
