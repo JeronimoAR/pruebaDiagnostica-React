@@ -8,6 +8,7 @@ import BookCard from "../components/BookCard"
 
 function home() {
     const [books, setBooks] = useState([])
+    const [online, setOnline] = useState(localStorage.getItem("online") === "true");
     useEffect(() => {
 
         const localeBooks = localStorage.getItem("books")
@@ -20,7 +21,7 @@ function home() {
     return (
         <>
             <Navbar/>
-            <Hero firstText="Encuentra tus libros favoritos!" secondText="Registra tu propio libro verificando tu perfil" />
+            <Hero firstText="Encuentra tus libros favoritos!" secondText={online ? "Administra tus libros con el boton de arriba!" : "Registra tu propio libro verificando tu perfil"} />
 
             <section>
                 <h1>Nuestros libros!</h1>

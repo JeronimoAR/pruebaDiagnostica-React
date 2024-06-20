@@ -21,6 +21,13 @@
     align-items: center;
 }
 
+.navLinks{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
 /* HERO SECTION */
 .hero-section {
     width: 100%;

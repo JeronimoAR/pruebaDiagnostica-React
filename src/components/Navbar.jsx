@@ -15,10 +15,6 @@ function Navbar() {
                 </Link>
                 {online ? <OnlineLinks /> : <OflineLinks />}
             </div>
-            <nav>
-                <Link></Link>
-                <Link></Link>
-            </nav>
         </header >
     )
 }

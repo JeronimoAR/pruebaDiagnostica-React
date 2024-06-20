@@ -8,7 +8,7 @@ function LogOut() {
         localStorage.setItem("online", false)
         setTimeout(() => {
             window.location.href = "/"
-        },5000)
+        },3000)
     }, [])
     return (
         <>
