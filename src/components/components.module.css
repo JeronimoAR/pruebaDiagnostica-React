@@ -21,11 +21,6 @@
     align-items: center;
 }
 
-.headerButtons .headerButtons{
-    color: white;
-    text-decoration: none;
-}
-
 /* HERO SECTION */
 .hero-section {
     height: 280px;
@@ -99,9 +94,4 @@ footer {
 .footerMainItem {
     font-weight: bold;
     padding-bottom: 20px;
-}
-
-.footerLink {
-    color: white;
-    text-decoration: none;
 }

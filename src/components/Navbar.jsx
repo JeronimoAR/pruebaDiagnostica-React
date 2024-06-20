@@ -9,8 +9,8 @@ function Navbar() {
                     <img src="/book.svg" alt="Logo" className={styles["logo"]} />
                 </Link>
 
-                <div className={styles["headerButtons"]}>
-                    <Link to="/verify" className={styles["headerButtons"]}>Verify User</Link>
+                <div>
+                    <Link to="/verify" >Verify User</Link>
                 </div>
             </div>
             <nav>

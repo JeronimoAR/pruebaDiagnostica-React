@@ -8,85 +8,85 @@ function Footer() {
                 <div id="footer" className={styles["footerContainer"]}>
                     <ul className={styles["footerUl"]}>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Ofertas
                             </Link>
                         </li>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Laptops
                             </Link>
                         </li>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Audio
                             </Link>
                         </li>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Auriculares
                             </Link>
                         </li>
                     </ul>
                     <ul className={styles["footerUl"]}>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Cómo comprar
                             </Link>
                         </li>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Formas de pago
                             </Link>
                         </li>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Envios
                             </Link>
                         </li>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Devoluciones
                             </Link>
                         </li>
                     </ul>
                     <ul className={styles["footerUl"]}>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Costos y tarifas
                             </Link>
                         </li>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Impuestos
                             </Link>
                         </li>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Facturación
                             </Link>
                         </li>
                     </ul>
                     <ul className={styles["footerUl"]}>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Mis pedidos
                             </Link>
                         </li>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Pedir nuevamente
                             </Link>
                         </li>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Lista de deseos
                             </Link>
                         </li>
                     </ul>
                     <ul className={styles["footerUl"]}>
                         <li className={styles["footerLi"]}>
-                            <Link className={styles["footerLink"]} to="/">
+                            <Link to="/">
                                 Garantía
                             </Link>
                         </li>
