@@ -3,14 +3,16 @@ import { useEffect } from 'react'
 import Home from './views/Home.jsx'
 import NotFound from './views/NotFound.jsx'
 import books from "./assets/books.json"
+import Verify from './views/Verify.jsx'
 
 function App() {
   useEffect(() => {
     localStorage.setItem("books", JSON.stringify(books))
-  }, )
+  },)
 
   const router = createBrowserRouter([
     { path: "/", element: <Home /> },
+    { path: "/verify", element: <Verify /> },
     { path: "/*", element: <NotFound /> }
   ])
   return (
