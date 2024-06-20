@@ -10,7 +10,7 @@ function Verify() {
     const [registro, setRegistro] = useState(true)
 
     return (
-        <div>
+        <>
             <Navbar />
             <div className={styles["form-container"]}>
                 {registro ? <LogIn /> : <Register />}
@@ -25,7 +25,7 @@ function Verify() {
                 </p>
             </div>
             <Footer />
-        </div>
+        </>
     )
 }
 
