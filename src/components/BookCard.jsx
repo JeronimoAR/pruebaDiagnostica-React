@@ -1,21 +1,22 @@
 import { Link } from "react-router-dom"
+import styles from "./components.module.css"
 
 function BookCard(props) {
     const { isbn, titulo, autor, genero, fecha, editorial, imagen } = props
     return (
         <>
             <Link to={`/detail/${isbn}`}>
-                <figure>
+                <figure className={styles["bookCard"]}>
                     <img src={imagen} alt={titulo} />
                     <figcaption>
-                        <h1>{titulo}</h1>
+                        <h3>{titulo}</h3>
                         <div>
-                            <h2>Autor: {autor}</h2>
-                            <h2>Genero: {genero}</h2>
+                            <span>Autor: {autor}</span>
+                            <span>Genero: {genero}</span>
                         </div>
                         <div>
-                            <h2>lanzamiento: {fecha}</h2>
-                            <h2>Editorial: {editorial}</h2>
+                            <span>lanzamiento: {fecha}</span>
+                            <span>Editorial: {editorial}</span>
                         </div>
                     </figcaption>
                 </figure>

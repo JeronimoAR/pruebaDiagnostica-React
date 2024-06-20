@@ -5,28 +5,38 @@ import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import styles from "./views.module.css"
 import BookCard from "../components/BookCard"
-import books from "../assets/books.json"
 
 function home() {
+    const [books, setBooks] = useState([])
+    useEffect(() => {
+        const localeBooks = localStorage.getItem("books")
 
+        if (localeBooks) {
+            setBooks(JSON.parse(localeBooks))
+        }
+    }, [])
 
     return (
         <>
             <Navbar />
             <Hero firstText="Encuentra tus libros favoritos!" secondText="Registra tu propio libro verificando tu perfil" />
-            <section className={styles["booksSection"]}>
-                {books.map((each) => (
-                    <BookCard
-                        key={each.isbn}
-                        isbn={each.isbn}
-                        titulo={each.titulo}
-                        autor={each.autor}
-                        genero={each.genero}
-                        fecha={each.fecha}
-                        editorial={each.editorial}
-                        imagen={each.imagen}
-                    />
-                ))}
+
+            <section>
+                <h1>Nuestros libros!</h1>
+                <div className={styles["booksSection"]}>
+                    {books.map((each) => (
+                        <BookCard
+                            key={each.isbn}
+                            isbn={each.isbn}
+                            titulo={each.titulo}
+                            autor={each.autor}
+                            genero={each.genero}
+                            fecha={each.fecha}
+                            editorial={each.editorial}
+                            imagen={each.imagen}
+                        />
+                    ))}
+                </div>
             </section>
             <Footer />
         </>

@@ -6,7 +6,7 @@
         "genero": "Fantasia",
         "fecha": "1997",
         "editorial": "salamandra",
-        "images":"https://m.media-amazon.com/images/I/51lEw8wGCPL._SY445_SX342_.jpg"
+        "imagen":"https://m.media-amazon.com/images/I/51lEw8wGCPL._SY445_SX342_.jpg"
     },
     {
         "isbn": "002",
@@ -15,7 +15,7 @@
         "genero": "Fantasia",
         "fecha": "1998",
         "editorial": "salamandra",
-        "images": "https://m.media-amazon.com/images/I/91voauWrUKL._SY425_.jpg"
+        "imagen": "https://m.media-amazon.com/images/I/91voauWrUKL._SY425_.jpg"
     },
     {
         "isbn": "003",
@@ -24,7 +24,7 @@
         "genero": "Fantasia",
         "fecha": "1999",
         "editorial": "salamandra",
-        "images": "https://m.media-amazon.com/images/I/41G6AGP-QHL._SY445_SX342_.jpg"
+        "imagen": "https://m.media-amazon.com/images/I/41G6AGP-QHL._SY445_SX342_.jpg"
     },
     {
         "isbn": "004",
@@ -33,7 +33,7 @@
         "genero": "Fantasia",
         "fecha": "2000",
         "editorial": "salamandra",
-        "images": "https://m.media-amazon.com/images/I/51ny8bEKvQL._SY445_SX342_.jpg"
+        "imagen": "https://m.media-amazon.com/images/I/51ny8bEKvQL._SY445_SX342_.jpg"
     },
     {
         "isbn": "005",
@@ -42,7 +42,7 @@
         "genero": "Fantasia",
         "fecha": "2003",
         "editorial": "salamandra",
-        "images": "https://m.media-amazon.com/images/I/51Pm9Nf4VdL._SY445_SX342_.jpg"
+        "imagen": "https://m.media-amazon.com/images/I/51Pm9Nf4VdL._SY445_SX342_.jpg"
     },
     {
         "isbn": "006",
@@ -51,7 +51,7 @@
         "genero": "Fantasia",
         "fecha": "2005",
         "editorial": "salamandra",
-        "images": "https://m.media-amazon.com/images/I/41Af7nHm9bL._SY445_SX342_.jpg"
+        "imagen": "https://m.media-amazon.com/images/I/41Af7nHm9bL._SY445_SX342_.jpg"
     },
     {
         "isbn": "007",
@@ -60,6 +60,6 @@
         "genero": "Fantasia",
         "fecha": "2007",
         "editorial": "salamandra",
-        "images": "https://m.media-amazon.com/images/I/41CPtggQwxL._SY445_SX342_.jpg"
+        "imagen": "https://m.media-amazon.com/images/I/41CPtggQwxL._SY445_SX342_.jpg"
     }
 ]

@@ -23,6 +23,7 @@
 
 /* HERO SECTION */
 .hero-section {
+    width: 100%;
     height: 280px;
     background: url("../public/biblioteca.jpg");
     background-size: fill;
@@ -53,6 +54,33 @@
     color: white;
     font-weight: 700;
 }
+
+/*BookCards*/
+.bookCard{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.bookCard img{
+    width: 220px;
+    height: auto;
+    box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.40);
+}
+
+.bookCard figcaption{
+    width: 220px;
+    margin-top: 10px;
+}
+
+.bookCard figcaption div{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /*Footer*/
 footer {
