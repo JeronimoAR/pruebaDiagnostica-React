@@ -1,30 +1,31 @@
-import { Link } from "react-router-dom"
-import { useEffect, useState } from "react"
-import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
+import Navbar from "../components/Navbar"
 import styles from "./views.module.css"
 import BookCard from "../components/BookCard"
+import { useEffect, useState } from "react"
 
-function home() {
+function Popular() {
     const [books, setBooks] = useState([])
-    const [online, setOnline] = useState(localStorage.getItem("online") === "true");
     useEffect(() => {
-
         const localeBooks = localStorage.getItem("books")
 
         if (localeBooks) {
-            setBooks(JSON.parse(localeBooks))
+            setBooks(popularBooks(JSON.parse(localeBooks)))
         }
     }, [])
 
+    /*Ordena los libros por cantidad de lectores la cual es generada aleatoriamente*/
+    function popularBooks(books) {
+        const popularBooks = books.sort((bookA, bookB) => bookA.lectores - bookB.lectores)
+        return popularBooks
+    }
+
     return (
         <>
-            <Navbar/>
-            <Hero firstText="Encuentra tus libros favoritos!" secondText={online ? "Administra tus libros con el boton de arriba!" : "Registra tu propio libro verificando tu perfil"} />
-
+            <Navbar />
+            <Hero firstText={""} secondText={"Libros mas populares!"} />
             <main>
-                <h1>Nuestros libros!</h1>
                 <div className={styles["booksSection"]}>
                     {books.map((each) => (
                         <BookCard
@@ -45,4 +46,4 @@ function home() {
     )
 }
 
-export default home
+export default Popular
