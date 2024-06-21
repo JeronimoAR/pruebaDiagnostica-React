@@ -8,7 +8,7 @@ function OnlineLinks() {
     }
   return (
     <div className={styles["navLinks"]}>
-      <Link to="/manageBooks" >Administrar Libros</Link>
+      <Link to="/manage" >Administrar Libros</Link>
       <Link to="/recent" >Lo mas reciente</Link>
       <Link to="/popular" >Lo mas popular</Link>
       <Link to="/search" ><img src="/search.svg" alt="search" /></Link>
