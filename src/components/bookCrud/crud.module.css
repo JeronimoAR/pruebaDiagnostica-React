@@ -1,0 +1,69 @@
+.formulario-contenedor {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px 35%;
+}
+
+.bookForm-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+.bookForm-container h1 {
+    margin-bottom: 20px;
+}
+
+.bookForm-container input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--mediumBrown);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.bookForm-container input[type="submit"] {
+    width: 100%;
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    background-color: var(--mediumBrown);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.bookForm-container input[type="submit"]:hover {
+    background-color: var(--lightBrown);
+}
+
+.bookForm-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.bookForm-container a:hover {
+    text-decoration: underline;
+}
+
+.bookForm-container p {
+    font-size: 12px;
+    color: #777;
+}
+
+.bookForm-container p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.bookForm-container p a:hover {
+    text-decoration: underline;
+}

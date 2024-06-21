@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import RowBookTable from "./RowBookTable"
 import styles from "./components.module.css"
 import { useState, useEffect } from "react"
@@ -43,7 +44,7 @@ function BookTable() {
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colSpan={8}><button>Ingresar un libro</button></td>
+                        <td colSpan={8}><Link to="/manage/create"><button>Ingresar un libro</button></Link></td>
                     </tr>
                 </tfoot>
             </table>
