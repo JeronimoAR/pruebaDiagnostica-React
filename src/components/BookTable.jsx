@@ -14,7 +14,7 @@ function BookTable() {
     }, [])
 
     return (
-        <>
+        <main>
             <h1>Lista de Libros</h1>
             <table className={styles["booktable"]}>
                 <thead>
@@ -41,8 +41,13 @@ function BookTable() {
                         />
                     ))}
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td colSpan={8}><button>Ingresar un libro</button></td>
+                    </tr>
+                </tfoot>
             </table>
-        </>
+        </main>
     )
 }
 

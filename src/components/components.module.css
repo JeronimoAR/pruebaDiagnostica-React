@@ -244,6 +244,7 @@
     width: 70%;
     border-collapse: separate;
     margin-bottom: 20px;
+    background-color: var(--lightColor);
 }
 
 .booktable th {
@@ -256,6 +257,38 @@
     text-align: left;
     border-bottom: 1px solid var(--lightBrown);
     text-align: center;
+}
+
+.booktable button {
+    background-color: var(--lightBrown);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    font-size: 12px;
+    padding: 8px 12px;
+    transition: 0.2s ease;
+}
+
+.booktable button:hover {
+    cursor: pointer;
+    border: 2px solid var(--mediumBrown);
+    color: var(--mediumBrown);
+    background-color: white;
+}
+
+.booktable .deleteButton{
+    background-color: rgb(161, 0, 0);
+}
+
+.booktable .deleteButton:hover{
+    color: rgb(161, 0, 0);
+    border: 2px solid rgb(161, 0, 0);
+}
+
+.booktable tfoot td {
+    background-color: var(--lightColor);
+    text-align: right;
+    border: none;
 }
 
 
