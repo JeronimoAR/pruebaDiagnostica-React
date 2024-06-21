@@ -7,6 +7,7 @@ import Verify from './views/Verify.jsx'
 import Popular from './views/Popular.jsx'
 import Search from './views/Search.jsx'
 import Manage from "./views/Manage.jsx"
+import Recent from './views/Recent.jsx'
 
 function App() {
   useEffect(() => {
@@ -22,8 +23,9 @@ function App() {
   const router = createBrowserRouter([
     { path: "/", element: <Home /> },
     { path: "/verify", element: <Verify /> },
-    {path: "/manage", element: <Manage />},
+    { path: "/manage", element: <Manage /> },
     { path: "/popular", element: <Popular /> },
+    { path: "/recent", element: <Recent /> },
     { path: "/search", element: <Search /> },
     { path: "/*", element: <NotFound /> }
   ])
