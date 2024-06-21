@@ -33,6 +33,7 @@ function BookTable() {
                 <tbody>
                     {books.map((book) => (
                         <RowBookTable
+                            key={book.isbn}
                             ISBN={book.isbn}
                             titulo={book.titulo}
                             autor={book.autor}

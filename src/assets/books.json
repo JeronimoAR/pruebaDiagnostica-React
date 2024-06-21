@@ -1,6 +1,6 @@
 [
     {
-        "isbn": "001",
+        "isbn": 1,
         "titulo": "Harry Potter y la piedra filosofal",
         "autor": "J.k Rowling",
         "genero": "Fantasia",
@@ -10,7 +10,7 @@
         "lectores": 2000
     },
     {
-        "isbn": "002",
+        "isbn": 2,
         "titulo": "Harry Potter y la cámara secreta",
         "autor": "J.k Rowling",
         "genero": "Fantasia",
@@ -20,7 +20,7 @@
         "lectores": 3300
     },
     {
-        "isbn": "003",
+        "isbn": 3,
         "titulo": "Harry Potter y el prisionero de Azkaban",
         "autor": "J.k Rowling",
         "genero": "Fantasia",
@@ -30,7 +30,7 @@
         "lectores": 230
     },
     {
-        "isbn": "004",
+        "isbn": 4,
         "titulo": "Harry Potter y el cáliz de fuego",
         "autor": "J.k Rowling",
         "genero": "Fantasia",
@@ -40,7 +40,7 @@
         "lectores": 23240
     },
     {
-        "isbn": "005",
+        "isbn": 5,
         "titulo": "Harry Potter y la Orden del Fénix",
         "autor": "J.k Rowling",
         "genero": "Fantasia",
@@ -50,7 +50,7 @@
         "lectores": 2340
     },
     {
-        "isbn": "006",
+        "isbn": 6,
         "titulo": "Harry Potter y el misterio del príncipe",
         "autor": "J.k Rowling",
         "genero": "Fantasia",
@@ -60,7 +60,7 @@
         "lectores": 7474
     },
     {
-        "isbn": "007",
+        "isbn": 7,
         "titulo": "Harry Potter y las Reliquias de la Muerte",
         "autor": "J.k Rowling",
         "genero": "Fantasia",

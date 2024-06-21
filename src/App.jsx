@@ -9,6 +9,7 @@ import Search from './views/Search.jsx'
 import Manage from "./views/Manage.jsx"
 import Recent from './views/Recent.jsx'
 import CreateBook from './views/CreateBook.jsx'
+import EditBook from './views/EditBook.jsx'
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
     { path: "/verify", element: <Verify /> },
     { path: "/manage", element: <Manage /> },
     { path: "/manage/create", element: <CreateBook /> },
+    { path: "/manage/edit", element: <EditBook /> },
     { path: "/popular", element: <Popular /> },
     { path: "/recent", element: <Recent /> },
     { path: "/search", element: <Search /> },

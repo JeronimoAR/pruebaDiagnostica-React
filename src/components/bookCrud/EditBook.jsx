@@ -1,40 +1,19 @@
 import styles from "./crud.module.css"
+import { useEffect } from "react"
 
-function BookForm() {
-    function handleNewBook(e) {
-        e.preventDefault()
+function EditBook({isbn}) {
+    const [book, setBook] = useState()
+
+    useEffect(() => {
+
         const localeBooks = JSON.parse(localStorage.getItem("books"))
-        let newISBN = 0
-        let link = ""
 
-        localeBooks.forEach(book => {
-            if (newISBN < Number(book.isbn)) {
-                newISBN = Number(book.isbn) + 1
-            }
-        });
-
-        if(e.target.link.value == ""){
-            link = "/NotFound.jpg"
-        }
-        let newViewres = Math.floor(Math.random() * 10000)
-
-        let newBook = {
-            "isbn": newISBN,
-            "titulo": e.target.titulo.value,
-            "autor": e.target.autor.value,
-            "genero": e.target.genero.value,
-            "fecha": e.target.fecha.value,
-            "editorial": e.target.editorial.value,
-            "imagen": link,
-            "lectores": newViewres
+        if (localeBooks) {
+            setBook(localeBooks.filter(book => book.isbn === isbn))
         }
 
-        localeBooks.push(newBook)
-        localStorage.setItem("books", JSON.stringify(localeBooks))
-
-        alert("libro registrado correctamente!")
-        window.location.href = "/"
-    }
+        console.log(book)
+    }, [])
     return (
         <div className={styles["formulario-contenedor"]}>
             <div className={styles["bookForm-container"]}>
@@ -55,4 +34,4 @@ function BookForm() {
     )
 }
 
-export default BookForm
+export default EditBook
