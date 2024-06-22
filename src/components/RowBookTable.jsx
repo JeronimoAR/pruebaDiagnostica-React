@@ -19,7 +19,7 @@ function RowBookTable(props) {
             <td>{genero}</td>
             <td>{editorial}</td>
             <td>{año}</td>
-            <td><Link to={`/manage/edit/`}><button>Editar</button></Link></td>
+            <td><Link to={`/manage/editBook/${ISBN}`}><button>Editar</button></Link></td>
             <td><button className={styles["deleteButton"]} onClick={() => handleDelete(ISBN)}>Eliminar</button></td>
         </tr>
     )

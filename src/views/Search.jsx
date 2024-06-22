@@ -26,6 +26,11 @@ function Search() {
             each.autor.toLowerCase()
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
+            .includes(text.toLowerCase()) ||
+            each.isbn.toString().includes(text.toLowerCase()) ||
+            each.genero.toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
             .includes(text.toLowerCase()));
         setFilteredBooks(found)
 

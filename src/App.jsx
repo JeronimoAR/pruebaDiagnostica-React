@@ -2,6 +2,9 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { useEffect } from 'react'
 import Home from './views/Home.jsx'
 import NotFound from './views/NotFound.jsx'
+
+//Descomentar y comentar para obtener los libros predeterminados
+
 // import books from "./assets/books.json"
 import Verify from './views/Verify.jsx'
 import Popular from './views/Popular.jsx'
@@ -26,8 +29,8 @@ function App() {
     { path: "/", element: <Home /> },
     { path: "/verify", element: <Verify /> },
     { path: "/manage", element: <Manage /> },
+    { path: "/manage/editBook/:isbn", element: <EditBook /> },
     { path: "/manage/create", element: <CreateBook /> },
-    { path: "/manage/edit", element: <EditBook /> },
     { path: "/popular", element: <Popular /> },
     { path: "/recent", element: <Recent /> },
     { path: "/search", element: <Search /> },
