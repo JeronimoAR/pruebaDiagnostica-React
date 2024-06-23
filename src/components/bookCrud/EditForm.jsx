@@ -7,7 +7,7 @@ function EditForm({ isbn }) {
     useEffect(() => {
 
         const localeBooks = JSON.parse(localStorage.getItem("books"))
-        
+
         if (localeBooks) {
             setBook(localeBooks.find((book) => book.isbn == Number(isbn)))
         }
@@ -23,7 +23,7 @@ function EditForm({ isbn }) {
         let newBooks = localeBooks.filter(book => book.isbn !== deletePrevBook.isbn)
         let link = ""
 
-        if(e.target.link.value == ""){
+        if (e.target.link.value == "") {
             link = "/NotFound.jpg"
         }
 
