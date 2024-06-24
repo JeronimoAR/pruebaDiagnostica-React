@@ -14,10 +14,8 @@ function BookCard(props) {
                             <span>Autor: {autor}</span>
                             <span>Genero: {genero}</span>
                         </div>
-                        <div>
-                            <span>lanzamiento: {fecha}</span>
-                            <span>Editorial: {editorial}</span>
-                        </div>
+                        <p>lanzamiento: {fecha}</p>
+                        <p>Editorial: {editorial}</p>
                     </figcaption>
                 </figure>
             </Link>

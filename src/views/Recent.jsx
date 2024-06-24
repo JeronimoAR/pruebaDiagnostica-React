@@ -13,11 +13,12 @@ function Recent() {
         if (localeBooks) {
             setBooks(recentBooks(JSON.parse(localeBooks)))
         }
+        
     }, [])
 
     /*Ordena los libros por el año de lanzamiento*/
     function recentBooks(books) {
-        const popularBooks = books.sort((bookA, bookB) => Number(bookB.fecha) - Number(bookA.fecha))
+        const popularBooks = books.sort((bookA, bookB) => new Date(bookB.fecha) - new Date(bookA.fecha))
         return popularBooks
     }
 

@@ -2,19 +2,14 @@ import { useEffect, useState } from "react"
 import styles from "./crud.module.css"
 
 function EditForm({ isbn }) {
-    const [book, setBook] = useState("")
-
+    const [book, setBook] = useState([]);
     useEffect(() => {
-
-        const localeBooks = JSON.parse(localStorage.getItem("books"))
-
+        const localeBooks = JSON.parse(localStorage.getItem("books"));
         if (localeBooks) {
-            setBook(localeBooks.find((book) => book.isbn == Number(isbn)))
+            const foundBook = localeBooks.find((book) => book.isbn === Number(isbn));
+            setBook(foundBook);
         }
-
-        console.log(book)
-        
-    }, [isbn])
+    }, [isbn]);
 
     function handleEditBook(e) {
         e.preventDefault()
@@ -23,17 +18,17 @@ function EditForm({ isbn }) {
         let newBooks = localeBooks.filter(book => book.isbn !== deletePrevBook.isbn)
         let link = ""
 
-        if (e.target.link.value == "") {
+        if (e.target.link.defaultValue == "") {
             link = "/NotFound.jpg"
         }
 
         let newBook = {
             "isbn": isbn,
-            "titulo": e.target.titulo.value,
-            "autor": e.target.autor.value,
-            "genero": e.target.genero.value,
-            "fecha": e.target.fecha.value,
-            "editorial": e.target.editorial.value,
+            "titulo": e.target.titulo.defaultValue,
+            "autor": e.target.autor.defaultValue,
+            "genero": e.target.genero.defaultValue,
+            "fecha": e.target.fecha.defaultValue,
+            "editorial": e.target.editorial.defaultValue,
             "imagen": link,
             "lectores": deletePrevBook.lectores
         }
@@ -48,14 +43,21 @@ function EditForm({ isbn }) {
         <div className={styles["formulario-contenedor"]}>
             <div className={styles["bookForm-container"]}>
                 <h1>Ingresa tu libro</h1>
-                <form id="bookForm" onSubmit={handleEditBook}>
-                    <input type="text" id="titulo" name="titulo" placeholder={book.titulo} required />
-                    <input type="text" id="autor" name="autor" placeholder={book.autor} required />
-                    <input type="text" id="genero" name="genero" placeholder={book.genero} required />
-                    <input type="text" id="fecha" name="fecha" placeholder={book.fecha} required />
-                    <input type="text" id="editorial" name="editorial" placeholder={book.editorial} required />
-                    <input type="text" id="link" name="link" placeholder={book.imagen} />
-                    <input type="submit" value="Ingresar Libro" />
+                <form id="bookForm" className={styles["bookForm"]} onSubmit={handleEditBook}>
+                    <input type="text" id="titulo" name="titulo" defaultValue={book.titulo} />
+                    <div className={styles["formSeparator"]}>
+                        <input type="text" id="autor" name="autor" defaultValue={book.autor} />
+                        <input type="text" id="genero" name="genero" defaultValue={book.genero} />
+                    </div>
+                    <div className={styles["formSeparator"]}>
+                        <label htmlFor="fecha">Ingresa la fecha de lanzamiento de tu libro aqui:</label>
+                        <input type="date" id="fecha" name="fecha" defaultValue={book.fecha} required />
+                    </div>
+                    <div className={styles["formSeparator"]}>
+                        <input type="text" id="editorial" name="editorial" defaultValue={book.editorial} />
+                        <input type="text" id="link" name="link" />
+                    </div>
+                    <input type="submit" defaultValue="Ingresar Libro" />
                 </form>
             </div>
 

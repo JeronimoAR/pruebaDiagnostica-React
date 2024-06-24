@@ -4,7 +4,7 @@
         "titulo": "Harry Potter y la piedra filosofal",
         "autor": "J.k Rowling",
         "genero": "Fantasia",
-        "fecha": "1997",
+        "fecha": "1997-06-26",
         "editorial": "salamandra",
         "imagen":"https://m.media-amazon.com/images/I/51lEw8wGCPL._SY445_SX342_.jpg",
         "lectores": 2000
@@ -14,7 +14,7 @@
         "titulo": "Harry Potter y la cámara secreta",
         "autor": "J.k Rowling",
         "genero": "Fantasia",
-        "fecha": "1998",
+        "fecha": "1998-07-02",
         "editorial": "salamandra",
         "imagen": "https://m.media-amazon.com/images/I/91voauWrUKL._SY425_.jpg",
         "lectores": 3300
@@ -24,7 +24,7 @@
         "titulo": "Harry Potter y el prisionero de Azkaban",
         "autor": "J.k Rowling",
         "genero": "Fantasia",
-        "fecha": "1999",
+        "fecha": "1999-07-08",
         "editorial": "salamandra",
         "imagen": "https://m.media-amazon.com/images/I/41G6AGP-QHL._SY445_SX342_.jpg",
         "lectores": 230
@@ -34,7 +34,7 @@
         "titulo": "Harry Potter y el cáliz de fuego",
         "autor": "J.k Rowling",
         "genero": "Fantasia",
-        "fecha": "2000",
+        "fecha": "2000-07-08",
         "editorial": "salamandra",
         "imagen": "https://m.media-amazon.com/images/I/51ny8bEKvQL._SY445_SX342_.jpg",
         "lectores": 23240
@@ -44,7 +44,7 @@
         "titulo": "Harry Potter y la Orden del Fénix",
         "autor": "J.k Rowling",
         "genero": "Fantasia",
-        "fecha": "2003",
+        "fecha": "2003-06-21",
         "editorial": "salamandra",
         "imagen": "https://m.media-amazon.com/images/I/51Pm9Nf4VdL._SY445_SX342_.jpg",
         "lectores": 2340
@@ -54,7 +54,7 @@
         "titulo": "Harry Potter y el misterio del príncipe",
         "autor": "J.k Rowling",
         "genero": "Fantasia",
-        "fecha": "2005",
+        "fecha": "2005-07-16",
         "editorial": "salamandra",
         "imagen": "https://m.media-amazon.com/images/I/41Af7nHm9bL._SY445_SX342_.jpg",
         "lectores": 7474
@@ -64,7 +64,7 @@
         "titulo": "Harry Potter y las Reliquias de la Muerte",
         "autor": "J.k Rowling",
         "genero": "Fantasia",
-        "fecha": "2007",
+        "fecha": "2007-07-21",
         "editorial": "salamandra",
         "imagen": "https://m.media-amazon.com/images/I/41CPtggQwxL._SY445_SX342_.jpg",
         "lectores": 4757

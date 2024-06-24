@@ -4,8 +4,8 @@ import Home from './views/Home.jsx'
 import NotFound from './views/NotFound.jsx'
 
 //Descomentar y comentar para obtener los libros predeterminados
-
 // import books from "./assets/books.json"
+
 import Verify from './views/Verify.jsx'
 import Popular from './views/Popular.jsx'
 import Search from './views/Search.jsx'
