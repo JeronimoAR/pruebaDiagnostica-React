@@ -9,87 +9,31 @@ function Footer() {
                     <ul className={styles["footerUl"]}>
                         <li className={styles["footerLi"]}>
                             <Link to="/">
-                                Ofertas
-                            </Link>
-                        </li>
-                        <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Laptops
-                            </Link>
-                        </li>
-                        <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Audio
-                            </Link>
-                        </li>
-                        <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Auriculares
+                                Libros
                             </Link>
                         </li>
                     </ul>
                     <ul className={styles["footerUl"]}>
                         <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Cómo comprar
-                            </Link>
-                        </li>
-                        <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Formas de pago
-                            </Link>
-                        </li>
-                        <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Envios
-                            </Link>
-                        </li>
-                        <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Devoluciones
+                            <Link to="/popular">
+                                Popular
                             </Link>
                         </li>
                     </ul>
                     <ul className={styles["footerUl"]}>
                         <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Costos y tarifas
-                            </Link>
-                        </li>
-                        <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Impuestos
-                            </Link>
-                        </li>
-                        <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Facturación
+                            <Link to="/recent">
+                                Ultimos Libros
                             </Link>
                         </li>
                     </ul>
                     <ul className={styles["footerUl"]}>
                         <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Mis pedidos
+                            <Link to="/verify">
+                                Registrate
                             </Link>
                         </li>
-                        <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Pedir nuevamente
-                            </Link>
-                        </li>
-                        <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Lista de deseos
-                            </Link>
-                        </li>
-                    </ul>
-                    <ul className={styles["footerUl"]}>
-                        <li className={styles["footerLi"]}>
-                            <Link to="/">
-                                Garantía
-                            </Link>
-                        </li>
+
                     </ul>
                 </div>
                 <div className={styles["footerCopyright"]}>
