@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 import EditForm from '../components/bookCrud/EditForm'
+import Hero from '../components/Hero'
 
 function EditBook() {
   const { isbn } = useParams()

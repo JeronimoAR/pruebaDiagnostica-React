@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BookForm from '../components/bookCrud/BookForm'
 import { useState } from 'react'
+import Hero from '../components/Hero'
 
 function CreateBook() {
     const [online, setOnline] = useState(localStorage.getItem("online") === "true");
